@@ -1,0 +1,26 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow-x: auto;
+}
+
+.control {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    background-color: #5e2b99 !important;
+}
+
+.second {
+    width: 100%;
+    height: 10%;
+    background-color: #5e2b99 !important;
+    justify-content: end;
+}
+
+.four {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}

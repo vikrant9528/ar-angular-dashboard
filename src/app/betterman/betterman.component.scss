@@ -1,0 +1,20 @@
+.one{
+    display: flex;
+    justify-content: center;
+}
+.main{
+    gap: 5rem;
+    
+}
+.dis{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    cursor: pointer;
+
+}
+.five{
+    overflow-y: scroll;
+    height: 20rem;
+   
+}

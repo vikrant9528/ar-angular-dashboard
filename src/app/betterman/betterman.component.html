@@ -1,0 +1,128 @@
+<div class="main d-flex">
+  <div class="top row col-8 pt-5 ps-3 container-fluid">
+    <div class="row col-12 ms-5 bg-light shadow">
+      <h3 class="py-3 fs-5">Cell Progress</h3>
+      <table class="table table-hover">
+        <thead class="table-light">
+          <tr *ngFor="let data of tableheading">
+            <!-- here is a issue -->
+            <th>{{data.id}}</th>
+            <th>{{data.Project}}</th>
+            <th>{{data.Completes}}</th>
+            <th>{{data.Status}}</th>
+            <th>{{data.testLink}}</th>
+            <th>{{data.Progress}}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-primary" *ngFor="let item of data">
+            <td>{{ item.id }}</td>
+            <td>{{ item.project }}</td>
+            <td>{{ item.completes }}</td>
+            <td *ngIf="item.status">
+              <span class="badge bg-success">Completed</span>
+            </td>
+            <td *ngIf="!item.status">
+              <span class="badge bg-warning">pending</span>
+            </td>
+            <td *ngIf="item.testLink">
+              <button class="btn btn-sm btn-primary">Test Survey</button>
+            </td>
+            <td>
+              <div class="progress">
+                <div class="progess-bar bg-success text-light" [style.width.%]="item.progress">
+                  {{ item.progress }}%
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+
+    <div class="image ms-5 row col-12 mt-5 shadow one">
+      <canvas id="depand"></canvas>
+    </div>
+  </div>
+  <div class="mid row col-4">
+    <div class="two col-8 pt-5">
+      <canvas id="cool"></canvas>
+    </div>
+    <div class="five shadow col-8 ms-3 mt-3">
+      <h4 class="py-3">Quota</h4>
+
+      <ul>
+        <div class="dis">
+          <li>Male 17-24</li>
+          <li>29/52</li>
+        </div>
+        <hr />
+        <div class="dis">
+          <li>Female 17-24</li>
+          <li>29/52</li>
+        </div>
+        <hr />
+        <div class="dis">
+          <li>Male 25-34</li>
+          <li>29/52</li>
+        </div>
+        <hr />
+        <div class="dis">
+          <li>Female 25-34</li>
+          <li>29/52</li>
+        </div>
+        <hr />
+        <div class="dis">
+          <li>Male 35-44</li>
+          <li>29/52</li>
+        </div>
+        <hr />
+        <div class="dis">
+          <li>Female 35-44</li>
+          <li>29/52</li>
+        </div>
+        <hr />
+        <div class="dis">
+          <li>Male 45-54</li>
+          <li>29/52</li>
+        </div>
+        <hr />
+        <div class="dis">
+          <li>Female 45-54</li>
+          <li>29/52</li>
+        </div>
+        <hr />
+        <div class="dis">
+          <li>Male 35-44</li>
+          <li>29/52</li>
+        </div>
+        <hr />
+        <div class="dis">
+          <li>Female 35-44</li>
+          <li>29/52</li>
+        </div>
+        <hr />
+      </ul>
+    </div>
+    <div class="six shadow col-8">
+      <h4>Files for Deliverables</h4>
+      <ul>
+        <li>Open Ended Response Sheet</li>
+      </ul>
+      <ul>
+        <li>SPSS Response Sheet</li>
+      </ul>
+      <ul>
+        <li>Count & percentage Sheet</li>
+      </ul>
+      <ul>
+        <li>Merge Matrix Sheet</li>
+      </ul>
+      <ul>
+        <li>User Interaction Sheet</li>
+      </ul>
+    </div>
+  </div>
+</div>
+

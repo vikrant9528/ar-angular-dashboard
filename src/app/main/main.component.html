@@ -1,0 +1,85 @@
+<div class="main">
+    <div
+      class="d-flex flex-column flex-shrink-0 bg-primary text-white control fw-bold control side"
+    >
+      <a
+        class="d-flex align-items-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+      >
+        <div class="image pt-3 ps-5">
+          <span><img src="../assets/image/monet (1).png" alt="" /></span>
+        </div>
+      </a>
+      <hr />
+      <ul class="nav nav-pills flex-column mb-auto first">
+        <li>
+          <a class="nav-link link-body-emphasis text-light">
+            <p routerLink="/dashboard">Dashboard</p>
+          </a>
+        </li>
+        <li>
+          <a class="nav-link link-body-emphasis text-light"> Asset </a>
+        </li>
+        <div class="dropdown">
+          <a
+            class="btn dropdown-toggle fs-5 text-light"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Survey
+          </a>
+  
+          <ul class="dropdown-menu row">
+            <li><a class="dropdown-item">Action</a></li>
+            <li><a class="dropdown-item">Another action</a></li>
+            <li><a class="dropdown-item">Something else here</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <a
+            class="btn dropdown-toggle fs-5 text-light"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Fielding
+          </a>
+  
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item">Action</a></li>
+            <li><a class="dropdown-item">Another action</a></li>
+            <li><a class="dropdown-item">Something else here</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <a
+            class="btn dropdown-toggle fs-5 text-light"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Data Reporting
+          </a>
+  
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item">Action</a></li>
+            <li><a class="dropdown-item">Another action</a></li>
+            <li><a class="dropdown-item">Something else here</a></li>
+          </ul>
+        </div>
+        <li></li>
+      </ul>
+  
+      <hr />
+    </div>
+    <div class="four">
+      <nav class="navbar second">
+        <form class="d-flex" role="search">
+          <button class="btn text-white" type="submit">Log out</button>
+        </form>
+      </nav>
+      <router-outlet></router-outlet>
+  
+    </div>
+  </div>
+  
